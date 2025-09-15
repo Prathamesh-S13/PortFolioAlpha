@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+
+      box-sizing: border-box;
+    }
+    .contact-links {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.contact-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #00aaff;
+}
+
+
+    body {
+      background-color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      color: white;
+    }
+
+  
+    .navigation {
+      background-color: red;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+
+      align-items: center;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+
+      gap: 40px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: yellow;
+      text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(19, 17, 13);
+    }
+
+    
+    nav ul li .hover-text {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      background-color: #111;
+      padding: 10px;
+      color: white;
+      font-size: 14px;
+
+      border-radius: 4px;
+      white-space: nowrap;
+      z-index: 100;
+    }
+
+    nav ul li:hover .hover-text {
+      display: block;
+    }
+
+    
+    .intro {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .intro h1 {
+      color: white;
+    }
+
+    .intro h2 {
+      color: brown;
+    }
+
+   
+    .mango {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .mango img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+ 
+    @media (max-width: 700px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .mango img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body class="fade-in"><footer style="background: #111; color: white; text-align: center; padding: 20px;">
+  <p>© 2025 Prathamesh. All rights reserved.</p>
+    <div class="contact-links">
+  <a href="https://share.google/images/5RwNsGYQzp8Taep2f" target="_blank">
+    <i class="fa-solid fa-envelope"></i> Mail for more queries
+  </a>
+  <a href="https://www.linkedin.com/in/prathamesh-sivasankar-2a84222a3/" target="_blank">
+    <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+  </a>
+    <a href="https://www.amazon.in/Earth-Secret-Wars-Rise-Destruction/dp/1638323356" target="_blank">
+    <i class="fa-brands fa-amazon"></i> Earth Secret Earth-Secret-Wars-Rise-Destruction
+  </a>
+    <a href=https://www.amazon.in/Earth-Secret-Wars-Detective-Foundation/dp/1685637345 target="_blank">
+    <i class="fa-brands fa-amazon"></i>  Earth-Secret-Wars-Detective-Foundation
+    
+  </a>
+    <a href="https://www.amazon.in/EARTH-SECRET-WARS-Stories-Fallout/dp/B09X5J986D" target="_blank">
+    <i class="fa-brands fa-amazon"></i> Earth Secret War:Stories from the Fallout
+  </a>
+</div>
+
+
+  <div class="navigation">
+    <nav>
+      <ul>
+        <li>
+          <a href="#">HOME</a>
+          <div class="hover-text">Go to homepage</div>
+        </li>
+        <li>
+          <a href="#">About</a>
+          <div class="hover-text">Efficient in all most everything but only if I have interest in those things <br> Mastered the ways of communication <br></div>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+          <div class="hover-text">Distance measurement by Ultrasound using Arduino board<br>Smart city creation<br>And this portfolio;)</div>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <div class="hover-text">Get in touch<br>9840962860<br>for further details</div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="intro">
+    <h1>Hi guys!</h1>
+    <h2>I am Prathamesh</h2><br>
+    <h2 style="color: rgb(187, 14, 14);">Yours Faithful</h2>
+    <h2 style="color: red;">Fate is a Feeble Thing when Compared to the Might of your Will</h2>
+  </div>
+  <section id="projects" style="padding: 50px 20px; background-color: #111; color: white;">
+  <h2 style="text-align: center; margin-bottom: 30px;">
+    Projects
+</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <div style="background: #222; padding: 20px; width: 300px; border-radius: 8px;">
+      <img alt="Project 1" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+      <h3 style="margin: 15px 0 5px;">Project One</h3>
+      <p>I havent done any projects yet;).</p>
+    </div>
+    <div style="background: #222; padding: 20px; width: 300px; border-radius: 8px;">
+      <img src  alt="Project 2" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+      <h3 style="margin: 15px 0 5px;">Project Two</h3>
+      <p>Same here.</p>
+    </div>
+    <div style="background: #222; padding: 20px; width: 300px; border-radius: 8px;">
+      <img src="project3.jpg" alt="Project 3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+      <h3 style="margin: 15px 0 5px;">Project Three</h3>
+      <p>sAMMME</p>
+    </div>
+  </div>
+</section>
+
+
+  <div class="mango">
+    <img src="Partha.jpeg" alt="My_pic">
+  </div>
+
+</body>
+</html>
